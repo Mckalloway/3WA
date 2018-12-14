@@ -1,0 +1,209 @@
+
+	/*color: #00BAD4;*/
+
+/*    HEADER    */
+* {
+	box-sizing: border-box
+}
+
+
+header img{
+	float: left;
+}
+header li a {
+    f
+	color: #00BAD4;
+}
+
+header li a:hover {
+	background-color: #00BAD4;
+	color: white;
+	padding: 15px 30px 15px 30px;
+}
+
+h1 {
+	float: left;
+	opacity: 0.6;
+	font-style: italic;
+}
+
+.clear {
+	clear: both;
+}
+nav {
+	text-align: center;
+}
+
+nav li {
+	list-style-type: none; 
+}
+
+.menu {
+	color: #00BAD4;
+	font-weight: bold;
+}
+
+.prems>li {
+	display: inline-block;
+	vertical-align: top;
+	width: 15%;
+	
+	color: #00BAD4;
+}
+
+li a {
+	text-decoration: none; 
+}
+
+.bloc1 {
+	position: absolute;
+	left: 0;
+	background-color: #00BAD4;
+	display: none;
+	width: 100%;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	line-height: 30px;
+}
+
+
+.bloc1 a {
+	color: white;
+}
+
+.bloc2 {
+	position: absolute;
+	left: 0;
+	background-color: #00BAD4; 
+	display: none;
+	width: 100%;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	line-height: 30px;
+
+}
+
+.bloc2 a {
+	color: white;
+}
+
+.premierlien:hover .bloc1 {
+	display: block;
+}
+
+
+.sousbloc1 {
+	float: left;
+	width: 50%;
+	font-weight: normal;
+}
+.sousbloc2 {
+	float: left;
+	width: 50%;
+	font-weight: normal;
+}
+
+
+.deuxiemelien:hover .bloc2 {
+	display: block;
+}
+
+	
+
+hr {
+	
+	border: 2px solid #00BAD4;
+}
+
+
+.sousbloc3 {
+	float: left;
+	width: 50%;
+	font-weight: normal;
+}
+.sousbloc4 {
+	float: left;
+	width: 50%;
+	font-weight: normal;
+}
+.sousbloc5 {
+	float: left;
+	width: 50%;
+	font-weight: normal;
+}
+.sousbloc6 {
+	float: left;
+	width: 50%;
+	font-weight: normal;
+}
+
+
+
+
+
+
+
+
+
+
+/*      MAIN       */
+
+
+.container {
+	max-width: 900px;
+	text-align: center;
+	margin: auto;
+}
+
+
+
+
+
+h2 {
+	text-align: left;
+	color: #00BAD4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*    FOOTER     */
+
+footer {
+	background-color: #00BAD4;
+	text-align: center;
+
+}
+footer img {
+	width: 2%;
+	margin-top: 10px;
+	
+}
+
+footer a {
+	color: white;
+}

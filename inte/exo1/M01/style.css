@@ -1,0 +1,30 @@
+.prouge {
+	color:red;
+}
+.pbleu {
+	color:blue;
+}
+.pvert {
+	color:green;
+}
+.pprouge {
+	background-color:red;
+}
+.ppbleu {
+	background-color:blue;
+}
+.ppvert {
+	background-color:green;
+}
+
+.fin {
+	font-size:10px;
+	text-align: center;
+}
+.parfin {
+	text-align: center;
+}
+.parfin img {
+	height:60px;
+	width:60px;
+}

@@ -1,0 +1,36 @@
+a[data-tooltip] {
+	position: relative;
+}
+
+a[data-tooltip]::before {
+	content: attr(data-tooltip);
+	text-align: center;
+	position: absolute;
+	display: none;
+	bottom: 1.2em;
+	left: 50%;
+	width: 100px;
+	margin-left: -50px;
+	background-color: black;
+}
+
+a[data-tooltip]:hover::before {
+	display: block;
+}
+
+a[data-tooltip]::after {
+	content:"";
+	position: absolute;
+	bottom:0.2em;
+	width:0;
+	height:0;
+	margin-left: -10px;
+	left: 50%;
+	border: 10px solid transparent;
+	border-top-color: black;
+	display: none;
+}
+
+a[data-tooltip]:hover::after {
+	display: block;
+}

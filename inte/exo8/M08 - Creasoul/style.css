@@ -1,0 +1,174 @@
+* {
+	box-sizing: border-box
+}
+
+body {
+	padding-left: 70px;
+	padding-right: 70px;
+	background-color: #F2F1F4;
+}
+
+
+header {
+	text-align: center;
+	max-width: 960px;
+}
+header img {
+	width: 10%;
+}
+
+nav {
+	background-color: #19AA93;
+	padding-bottom: 20px; 
+	padding-top: 20px;
+}
+
+nav a {
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	width: 30%;
+}
+/*FIN DU HEADER*/
+
+.container {
+	max-width: 960px;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+	color: #19AA93;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-weight: normal;
+	border-bottom: 1px solid #19AA93;
+	text-transform: uppercase;
+}
+
+
+.presentation {
+	float: left;
+	width: 65%;
+}
+
+.container img {
+	width: 100%;
+}
+
+h2 {
+	color: #19AA93;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-weight: normal;
+	border-bottom: 1px solid #19AA93;
+	text-transform: uppercase;
+}
+
+
+
+
+
+
+aside {
+	float: right;
+	width: 30%;
+	background-color: #B5DBB2;
+}
+
+h3 {
+	color: #19AA93;
+	padding-left: 20px;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-weight: normal;
+	border-bottom: 1px solid #19AA93;
+	text-transform: uppercase;
+}
+
+aside p {
+	padding-left: 20px;
+}	
+
+
+.clear {
+	clear: both;
+}
+
+
+
+
+footer {
+	display: block;
+	text-align: center;
+	margin-top: 20px;
+}
+
+footer img {
+	width: 4%;
+}
+
+footer a {
+	text-decoration: none;
+	color: grey;
+}
+
+
+
+
+@media screen and (min-width: 480px) and (max-width: 960px) {
+	
+	header img {
+		width: 20%;
+	}
+
+
+	body {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	nav a {
+		display: block;
+		line-height: 50px;
+		text-align: center;
+		width: 100%;
+	}
+
+	.presentation {
+		float: none;
+		width: auto;
+	}
+
+	aside {
+		float: none;
+		width: auto;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	
+
+	body {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	header img {
+		width: 40%;
+	}
+
+	nav a {
+		display: block;
+		line-height: 50px;
+		text-align: center;
+		width: 100%;
+	}
+
+	.presentation {
+		width: 100%;
+	}
+
+
+	aside {
+		display: none;
+	}
+}

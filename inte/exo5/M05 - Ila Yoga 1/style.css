@@ -1,0 +1,175 @@
+/*font-family: 'Kaushan Script', cursive;
+font-family: 'Playfair Display', serif;*/
+
+
+
+
+/* ********************************
+   *             HEADER           *
+   ******************************** */
+* {
+	box-sizing: border-box
+}
+
+header {
+	background-image: url(img/fond.jpg);
+	background-size: cover;
+	background-position: center;
+	font-family: 'Kaushan Script', cursive;
+	color: white;
+	text-align: center;
+	}
+
+
+nav {
+	   	background-color: rgba(255, 255, 255, 0.4);
+	   }
+
+
+header a {
+	color: white;
+	font-size: 1.2em;
+	text-decoration: none;
+	display: inline-block;
+	padding-bottom: 20px;
+	padding-top: 10px;
+	padding-right: 50px;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+.header i {
+	display: block;
+}
+
+
+
+.promo {
+	background-color: rgba(255, 255, 255, 0.1);
+	font-family: 'Playfair Display', serif;
+}
+
+h1 {
+	padding-bottom: 200px;
+	padding-top: 90px;
+}
+
+/* ********************************
+   *          FIN DU HEADER       *
+   ******************************** */
+
+
+
+
+main {
+	width: 100%;
+	margin: 0 auto 0 auto;
+}
+
+
+p {
+	font-family: 'Playfair Display', serif;
+	font-weight: normal;
+	opacity: 0.6;
+}
+
+h2 {
+	font-family: 'Playfair Display', serif;
+	font-weight: normal;
+	opacity: 0.6;
+}
+
+.sect1 {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.sect1 p {
+	text-align: left;
+}
+
+.art1 {
+text-align: center;
+padding-bottom: 200px;
+padding-top: 50px
+
+}
+.art1 img {
+	float: left;
+	padding-right: 30px;
+}
+
+
+hr {
+	opacity: 0.1;
+}
+
+
+.art2 {
+	text-align: center;
+	padding-bottom: 200px;
+	padding-top: 50px;
+}
+
+.art2 img {
+	float: right;
+	padding-left: 30px;
+}
+
+
+
+.sect2 {
+	background-image: url(img/background_section.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+	padding-bottom: 50px
+}
+
+.sect2 article {
+	display: inline-block;
+	width: 33%;
+	text-align: center;
+	color: white;
+}
+
+h3 {
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+/* ********************************
+   *             FOOTER           *
+   ******************************** */
+
+
+footer {
+	background-image: url(img/background_section.jpg);
+	background-size: cover;
+	background-position: bottom;
+	text-align: center;
+	color: white;
+	padding-top: 50px;
+
+}
+
+footer img {
+	width: 4%;
+	
+}
+
+footer a {
+	color: white;
+}
+
+
+/* ********************************
+   *          FIN DU FOOTER       *
+   ******************************** */

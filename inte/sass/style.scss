@@ -1,0 +1,29 @@
+$color1: red;
+$color2:blue;
+$color3:green;
+
+@for $i from 2 through 12 {
+	.grid-#{$i} {
+		display: flex;
+	}
+	.grid-#{$i}>*{
+	 width: 100%/$i;
+	}
+
+}
+
+
+
+
+
+h1 {
+	color: $color1;
+}
+
+h2 {
+	color: $color3;
+}
+
+.sect2 p {
+color: $color2
+}

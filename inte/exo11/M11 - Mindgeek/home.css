@@ -1,0 +1,181 @@
+* {
+	box-sizing: border-box
+}
+
+body {
+	margin: 0;
+}
+
+
+nav {	
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 90%;
+	font-family: 'Candal', sans-serif;
+	font-weight: normal;
+	padding-bottom: 20px;
+	padding-left: 50px;
+
+}
+
+
+nav img {
+	width: 10%;
+}
+
+
+header a {
+	text-decoration: none;
+	color: #23404E;
+}
+
+
+
+
+.fas {
+	display: block;
+	color: #FF8B99;
+	text-align: center;
+}
+
+.container {
+	max-width: 960px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+
+.home {
+	background-image: url("img/background.jpg");
+	background-size: cover;
+	color: white;
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 100px;
+
+}
+
+
+.recherche {
+	background-color: #FF8B99;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	margin-bottom: 50px;
+
+}
+
+
+form  input {
+	background-color: #FF8B99; 
+	color: white;
+	width: 50%;
+	border: 0;
+}
+
+.sect1, .sect2 {
+	display: flex;
+	flex-wrap: nowrap;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	
+}
+
+.sect1 .fas, .sect2 .fas {
+	font-size: 200%;
+}
+
+
+
+p {
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+
+
+h1, h2, h3 {
+	font-family: 'Candal', sans-serif;
+	font-weight: normal;
+}
+
+h2 {
+	color: #23404E;
+	border-top: 1px dotted black;
+	border-right: 1px dotted black;
+	border-left: 1px dotted black;
+	padding-top: 15px;
+}
+
+
+h3 {
+	color: #FF8B99;;
+}
+
+
+
+footer {
+	background-color: #23404E;
+	text-align: center;
+	padding-top: 40px;
+	color: white;
+}
+footer a {
+	text-decoration: none;
+	color: grey;
+}
+
+footer img {
+	padding-top: 40px;
+	width: 4%;
+}
+
+.foot {
+	display: flex;
+}
+
+.foot a {
+	text-decoration: none;
+	color: white;
+}
+
+
+
+
+
+@media screen and (min-width: 480px) and (max-width: 960px) {
+
+nav {
+	display: flex;
+	flex-direction: column;
+}
+
+nav a {
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+.container {
+	width: 80%;
+}
+
+.sect1, .sect2 {
+	display: flex;
+	flex-direction: column;
+
+}
+
+
+
+
+
+
+
+
+
+}
+
