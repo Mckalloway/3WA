@@ -61,7 +61,7 @@ h3 {
 }
 
 .slide img {
-  border: 4px white solid;
+  border: 2px white solid;
   width: 100%;
 }
 
@@ -227,6 +227,10 @@ footer img {
   header ul {
     padding-right: 50px;
   }
+  header ul li {
+    line-height: 200%;
+    text-align: right;
+  }
   .flexslider {
     border: 4px white solid;
     width: 90%;
@@ -241,9 +245,8 @@ footer img {
             flex-direction: column;
   }
   .moto section {
-    width: 70%;
+    width: 90%;
     margin-bottom: 30px;
-    margin-left: 14%;
   }
   .connaitre video {
     width: 80%;
