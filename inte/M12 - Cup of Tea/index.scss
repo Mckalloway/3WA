@@ -1,0 +1,260 @@
+$color1: white;
+$color2: #94AF30;
+$color3: rgba(242, 242, 242, 0.89);
+$color4: #B08F69;
+$color5: #879E2C;
+$color6: #94AF30;
+
+
+.prix {
+    font-weight: bold;
+    font-size: 24px;
+}
+/********** trait sur les titre***********
+h1 {
+    display: inline-block;
+    position: relative;
+}
+h1:after,
+h1:before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 200%;
+    top: 50%;
+    right: 100%;
+    background: black;
+}
+h1:after { left: 100%; }
+*/
+h4 {
+    font-family: 'Amaranth', sans-serif;
+    opacity: 0.7;
+}
+
+
+
+.promo {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    h1 {
+        padding-bottom: 20px;
+        color: $color2;
+        text-align: center;
+        font-family: 'Amaranth', sans-serif;
+
+    }
+
+    img {
+        width: 100%;
+    }
+
+    p {
+        padding-top: 10px;
+        text-align: center;
+    }
+}
+
+
+.choixthe {
+    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: $color1;
+
+    h2 {
+        text-align: center;
+        color: $color2;
+        width: 100%;
+        font-family: 'Amaranth', sans-serif;
+    }
+
+    div {
+
+        text-align: center;
+
+    }
+}
+.choixthe:hover {
+    a {
+        opacity: 0.6;
+    }  
+}
+
+.choixthe a:hover {
+    opacity: 1;
+}
+
+
+
+
+
+section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: $color1;
+
+    article {
+        display: inline-block;
+        width: 32%;
+        text-align: center;
+        margin: auto;
+
+        h2 {
+            color: $color2;
+            font-family: 'Amaranth', sans-serif;
+        }
+
+        a {
+            padding: 10px 20px 10px 20px;
+            background-color: $color4;
+            color: $color1;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: $color1;
+        }
+    }
+}
+
+
+
+
+
+
+/********************RESPONSIVE TABLETTE************************/
+
+@media screen and (min-width: 480px) and (max-width: 960px) {
+
+
+    .choixthe {
+        div {
+            width: 50%;
+        }
+
+        .rooibos {
+            width: 100%;
+        }
+    }
+
+    section {
+        article {
+            width: 95%;
+            padding-bottom: 40px;
+        }
+    }
+
+}
+
+
+
+/***************************** RESPONSIVE MOBILE *******************************/
+
+@media screen and (max-width: 480px) {
+
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    header {
+        background-position: bottom;
+        .coin {
+            visibility: hidden;
+        }
+        .bloc1 {
+            display: block;
+            .logo {
+                text-align: center;
+                width: 100%;
+            }
+            .panier{
+                order: -1;
+                margin-left: -20px;
+                padding: 10px 20px 10px 25px;
+                border-radius: 50px;
+                box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+                .mob {
+                    display: none;
+                }
+            }
+        }
+        nav {
+            flex-direction: column;
+            text-align: center;
+            line-height: 50px;
+        }
+    }
+
+
+
+    .promo {
+        display: none;
+    }
+
+    .slide {
+        display: none;
+    }
+
+
+
+    .choixthe {
+        .rooibos{
+            width: 100%;
+        }
+    }
+
+
+    section {
+        article {
+            width: 95%;
+            padding-bottom: 40px;
+        }
+    }
+
+    footer {
+        .liens {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            a {
+                width: 50%;
+            }
+            .garantie {
+                width: 100%;
+            }
+        }
+
+        .fin {
+            background-position: bottom;
+            text-align: center;
+        }
+
+        .autre {
+            div {
+                width: 100%;
+                ul {
+                    margin-right: 30px;
+                } 
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+}

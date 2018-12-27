@@ -1,0 +1,270 @@
+$color1: white;
+$color2: #96B011;
+$color3: rgba(242, 242, 242, 0.89);
+$color4: #B08F69;
+$color5: #879E2C;
+$color6: #96B011;
+
+
+/****PAGE***/
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $color3;
+    h1 {
+        font-size: 40px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+}
+.container {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+/******** HEADER *******/
+
+header {
+    background-image: url("img/bg.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+    background-color: $color6;
+    color: $color1;
+
+    .coin {
+        width: 10%;
+        float: right;
+    }
+
+    p {
+        background-color: rgba(0, 0, 0, 0.09);
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .bloc1 {
+        margin-bottom: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        .panier {
+            a {
+                color: $color1;
+                text-decoration: none;
+
+                .fas {
+                    padding: 10px 10px 10px 10px;
+                    border: 1px $color1 solid;
+                    border-radius: 100%;
+                }
+            }
+            
+        }
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            color: $color1;
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 10px 20px 10px 20px;
+        }
+
+        a:hover {
+            
+            text-decoration: none;
+            color: $color1;
+            background-color: rgba($color1, $alpha: 0.2);
+        }
+    }
+
+}
+
+/******** FOOTER *******/ 
+
+footer {
+    text-align: center;
+
+    .fas,
+    .far {
+        display: block;
+    }
+
+    .liens {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 110px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: $color5;
+
+        a {
+            width: 20%;
+            color: $color1;
+            opacity: 0.6;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: $color1;
+        }
+    }
+
+    .autre {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: auto;
+        opacity: 0.8;
+
+        div {
+            width: 33%;
+
+            h4 {
+                color: $color1;
+                font-family: 'Amaranth', sans-serif;
+            }
+            ul {
+                padding-right: 40px;
+            }
+
+            li {
+                list-style-type: none;
+
+                a {
+                    text-decoration: none;
+                    color: $color1;
+                    opacity: 0.6;
+                }
+
+                a:hover {
+                    text-decoration: none;
+                    color: $color1;
+                }
+            }
+        }
+    }
+
+    .fin {
+        background-image: url("img/bg.jpg");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: $color6;
+
+        .justine {
+            background-color: rgba(0, 0, 0, 0.09);
+
+            p {
+                color: $color1;
+            }
+
+            a {
+                color: $color1;
+            }
+
+            a:hover {
+                text-decoration: none;
+                color: $color1;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 480px) and (max-width: 960px) {
+    footer {
+        .liens {
+            padding-left: 70px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+
+    header {
+        background-position: bottom;
+        .coin {
+            visibility: hidden;
+        }
+        .bloc1 {
+            display: block;
+            .logo {
+                text-align: center;
+                width: 100%;
+            }
+            .panier{
+                order: -1;
+                margin-left: -20px;
+                padding: 10px 20px 10px 25px;
+                border-radius: 50px;
+                box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+                .mob {
+                    display: none;
+                }
+            }
+        }
+        nav {
+            flex-direction: column;
+            text-align: center;
+            line-height: 50px;
+        }
+    }
+
+footer {
+    .liens {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 0;
+        a {
+            width: 50%;
+            
+        }
+        .garantie {
+            width: 100%;
+        }
+    }
+
+    .fin {
+        background-position: bottom;
+        text-align: center;
+    }
+
+    .autre {
+        div {
+            width: 100%;
+            ul {
+                
+                padding-right: 0;
+            } 
+        }
+    }
+}
+}
+

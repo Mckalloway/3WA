@@ -1,0 +1,479 @@
+$color1: white;
+$color2: #F8325B;
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(img/fond.png);
+  }
+
+.container {
+    max-width: 1100px;   
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Bree Serif', serif;
+    
+}
+
+h2 {
+    text-align: center;
+    &::before{
+        content: "-";
+    }
+    &::after {
+        content: "-";
+    }
+}
+
+header {
+
+    nav {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    
+        h1 {
+            opacity: 0.4;
+        }
+       
+        a {
+            text-decoration: none;
+            color: black;
+            opacity: 0.4;
+            transition: all 1s;
+            .fas {
+                display: block;
+            }
+        }
+        img {
+            width: 40%;
+            vertical-align: middle;
+        }
+    }
+    
+}
+.premier h1{
+    transition: all 1s;
+}
+.presentation {
+    background-image: url(img/bg_header.png);
+    background-size: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+    h2 {
+        color: $color1;
+    }
+    p {
+        color: $color1;
+        margin-bottom: 100px;
+    }
+    a {
+        padding: 10px 20px 10px 20px;
+        background-color: $color2;
+        color: $color1;
+        text-decoration: none;
+    }
+    .container {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+}
+
+
+
+
+
+.competence {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    text-align: center;
+    h2 {
+        width: 100%;
+        color: $color2;
+        padding-bottom: 40px;
+        border-bottom: 1px rgb(218, 214, 214) solid;
+    }
+    article {
+        width: 30%;
+        h3, p{
+            opacity: 0.4;
+        }
+    }
+
+}
+
+
+.service {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    text-align: center;
+    h2 {
+        width: 100%;
+        color: $color2;
+        padding-bottom: 40px;
+        border-bottom: 1px rgb(218, 214, 214) solid;
+    }
+    article {
+        width: 30%;
+        h4 {
+            color: $color2;
+        }
+        i, p {
+            opacity: 0.4;
+        }
+        i {
+            padding: 20px 20px 20px 20px;
+            background-color: #EEEFF1;
+            border: 2px rgba(238, 239, 241, 0.383) solid;
+            border-radius: 100%;
+        
+        }
+    }
+
+}
+
+.exemple {
+    h2 {
+        color: $color2;
+        padding-bottom: 40px;
+        border-bottom: 1px rgb(218, 214, 214) solid;
+    }
+    article {
+        h4 {
+            color: $color2;
+            text-align: left;
+        }
+    }
+}
+
+
+
+
+.orange {
+    img {
+        float: right;
+        width: 50%;
+        padding-left: 20px;
+    }
+    p {
+        text-align: left;
+        opacity: 0.4;
+    }
+    a {
+        text-align: left;
+        color: $color2;
+    }
+}
+
+.time {
+    img {
+        float: left;
+        width: 50%;
+        padding-right: 20px;
+    }
+    p {
+        text-align: left;
+        opacity: 0.4;
+    }
+    a {
+        text-align: left;
+        color: $color2;
+    }
+}
+
+.aqua {
+    img {
+        float: right;
+        width: 50%;
+        padding-left: 20px;
+    }
+    p {
+        text-align: left;
+        opacity: 0.4;
+    }
+    a {
+        text-align: left;
+        color: $color2;
+    }
+}
+
+.flower {
+    img {
+        float: left;
+        width: 50%;
+        padding-right: 20px;
+    }
+    p {
+        text-align: left;
+        opacity: 0.4;
+    }
+    a {
+        text-align: left;
+        color: $color2;
+    }
+}
+
+
+
+
+
+.contact {
+    text-align: center;
+    h2 {
+        color: $color2;
+        padding-bottom: 40px;
+        border-bottom: 1px rgb(218, 214, 214) solid;
+        padding-top: 20px;
+        &::before{
+            content: "-";
+        }
+        &::after {
+            content: "-";
+        }
+    }
+    p {
+        opacity: 0.4;
+    }
+    form {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .haut {
+                width: 45%;
+                padding-bottom: 30px;
+                input {
+                    width: 100%;
+                    line-height: 30px;
+                    border-radius: 20px;
+                    font-family: 'Bree Serif', serif;
+                }
+            #prenom {
+                background-image: url("img/name.svg");
+                background-repeat: no-repeat;
+                background-size: 25px;
+                background-position: 5px 3px;
+            }
+            #mail {
+                background-image: url("img/mail.svg");
+                background-repeat: no-repeat;
+                background-size: 25px;
+                background-position: 5px 3px;
+            }
+        }
+        .mess {
+            width: 100%;
+            padding-bottom: 30px;
+            input{
+                width: 100%;
+                line-height: 30px;
+                border-radius: 20px;
+                background-image: url("img/message.svg");
+                background-repeat: no-repeat;
+                background-size: 25px;
+                background-position: 5px 3px;
+                font-family: 'Bree Serif', serif;
+            }
+            
+        }
+        
+        
+    }
+    
+}
+.boutton {
+    
+    margin: auto; 
+    .buttonred {
+        background-color: $color2;
+        padding: 10px 20px 10px 20px;
+        font-family: 'Bree Serif', serif;
+        color: $color1;
+    }
+    .buttongrey {
+        background-color: gray;
+        padding: 10px 20px 10px 20px;
+        font-family: 'Bree Serif', serif;
+        color: $color1;
+    }   
+}
+
+
+
+
+footer {
+    p {
+        opacity: 0.3;
+    }
+    a {
+        color: $color2;
+        text-decoration: none;
+        opacity: 1;
+    }
+}
+
+
+
+
+@keyframes move {
+    0% {
+        transform: translateY(-1em);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-1em);
+    }
+    
+}
+
+.service article i:hover {
+    animation: move 0.8s infinite;
+}
+
+
+
+header nav a:hover {
+    transform: translateY(2em);
+}
+
+h1:hover {
+    transform: scale(1.4);
+    color: $color2;
+    opacity: 1;
+}
+
+
+
+/****************************RESPONSIVE TABLETTE********************/
+
+@media screen and (min-width: 480px) and (max-width: 960px) {
+
+
+
+  
+    .container {
+        max-width: 600px;
+    }
+
+    header {
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .premier {
+                width: 100%;
+            }
+            img {
+                width: 20%;
+            }
+            padding-bottom: 30px;
+        }
+            
+   
+    }
+
+
+
+    .presentation {
+        .container {
+            padding-top: 90px;
+            padding-bottom: 90px;
+        }
+    }
+
+
+
+    .competence {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+    .service {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        article {
+            width: 95%;
+        }
+    }
+
+}
+
+
+
+
+/***************************** RESPONSIVE MOBILE *******************************/
+
+@media screen and (max-width: 480px) {
+
+
+    .container {
+        max-width: 480px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    header {
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .premier {
+                width: 100%;
+            }
+            img {
+                width: 20%;
+            }
+            padding-bottom: 30px;
+        }
+    }
+
+    .presentation {
+        background-size: cover;
+        .container {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    }
+
+    .competence {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        article {
+            width: 100%;
+        }
+    }
+
+    .service {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        article {
+            width: 100%;
+        }
+    }
+
+    .exemple img {
+        float: none;
+        width: 100%;
+    }
+
+
+
+
+}
